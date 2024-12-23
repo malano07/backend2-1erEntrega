@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce - Registro, Login y Productos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido al Ecommerce</h1>
+        
+      
+        <section id="register-section">
+            <h2>Registro</h2>
+            <form id="registerForm">
+                <input type="text" id="firstName" placeholder="Nombre" required>
+                <input type="text" id="lastName" placeholder="Apellido" required>
+                <input type="email" id="email" placeholder="Correo Electrónico" required>
+                <input type="number" id="age" placeholder="Edad" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
+
+      
+        <section id="login-section">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="email" id="loginEmail" placeholder="Correo Electrónico" required>
+                <input type="password" id="loginPassword" placeholder="Contraseña" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </section>
+
+       
+        <section id="products-section">
+            <h2>Productos Disponibles</h2>
+            <button id="loadProducts">Ver Productos</button>
+            <div id="product-list" class="product-list"></div>
+        </section>
+        
+        <div id="response" class="response"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
+
